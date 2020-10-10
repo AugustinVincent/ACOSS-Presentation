@@ -22,7 +22,6 @@ html{
     height: 100vh;
     background: red;
     color: #ffffff;
-    font-size: 100px;
     align-items: center;
     justify-content: center;
     transition: 0.5s ease-in-out all;
@@ -68,12 +67,15 @@ html{
     transition: 0.5s ease-in-out all;
 }
 
-/* .background{
-    position: absolute;
-    z-index: -1;
-    width: 1000vw;
-    height: 1000vh;
-    background: grey;
-    transform: translateZ(-5000px);
-} */
 
+
+
+
+h2{
+    font-family: 'Commissioner', sans-serif;
+}
+/**** SLIDES SECTION**/
+/*Page 1,2*/
+h2.mainTitle{
+    margin-bottom: 250px;
+}
