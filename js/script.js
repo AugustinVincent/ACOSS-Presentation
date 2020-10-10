@@ -1,45 +1,61 @@
 const container = document.querySelector('.container')
 const containerPivot = container.querySelector('.pivot')
 const pages = Array.from(document.querySelectorAll('.page'))
+
+
 let pageNumber = 1
 let rotationY = 0
 
 const pagesRotationY = [
-     0  , 
-     -60  ,
-    -120  ,
-    -180  ,
-    -240  ,
-    -300  ,
+    0 , 
+    45  , 
+    90  ,
+    135  ,
+    180  ,
+    225  ,
+    270  ,
+    315
 ]
 
 window.addEventListener('keydown', (event) =>
 {
-    console.log(event)
-    console.log(pageNumber)
+    
     if(event.key == "ArrowLeft")
     {
-        console.log('left')
-        if(pageNumber == pages.length)
-            pageNumber =  1
+        if(pageNumber == 1)
+        {
+            // pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(800px)`
+            pageNumber =  pages.length
+        }
         else
-            pageNumber += 1
+        {
+            // pages[pageNumber].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(800px)`
+            pageNumber -= 1
+        }
 
-        rotationY += 60
-        console.log(pagesRotationY[pageNumber - 1])
+        rotationY += 45
         containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
+        pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(1600px)`
     }
 
 
     if(event.key == "ArrowRight")
     {
-        console.log('right')
-        if(pageNumber == 1)
-            pageNumber =  pages.length
+        if(pageNumber == pages.length)
+        {
+            // pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(800px)`
+            pageNumber =  1
+        }
         else
-            pageNumber -= 1
+        {
+            // pages[pageNumber-2].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(800px)`
+            pageNumber += 1
+        }
 
-        rotationY -= 60
+        rotationY -= 45
         containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
+        pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(1600px)`
     }
+    console.log(pageNumber)
+
 })

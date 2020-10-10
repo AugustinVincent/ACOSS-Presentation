@@ -25,31 +25,40 @@ html{
     font-size: 100px;
     align-items: center;
     justify-content: center;
+    transition: 0.5s ease-in-out all;
 }
 
 
 .page-1{
-    transform: rotateY(0deg) translateZ(800px) ;
+    transform: rotateY(0deg) translateZ(1100px) ;
 }
 
 .page-2{
-    transform: rotateY(-60deg) translateZ(800px);
+    transform: rotateY(45deg) translateZ(1100px);
 }
 
 .page-3{
-    transform: rotateY(-120deg) translateZ(800px);
+    transform: rotateY(90deg) translateZ(1100px);
 }
 
 .page-4{
-    transform: rotateY(-180deg) translateZ(800px);
+    transform: rotateY(135deg) translateZ(1100px);
 }
 
 .page-5{
-    transform: rotateY(-240deg) translateZ(800px);
+    transform: rotateY(180deg) translateZ(1100px);
 }
 
 .page-6{
-    transform: rotateY(-300deg) translateZ(800px);
+    transform: rotateY(225deg) translateZ(1100px);
+}
+
+.page-7{
+    transform: rotateY(270deg) translateZ(1100px);
+}
+
+.page-8{
+    transform: rotateY(315deg) translateZ(1100px);
 }
 
 
