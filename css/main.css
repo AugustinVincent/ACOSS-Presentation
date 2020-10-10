@@ -29,7 +29,7 @@ html{
 
 
 .page-1{
-    transform: rotateY(0deg) translateZ(2400px) ;
+    transform: rotateY(0deg) translateZ(3600px) ;
 }
 
 .page-2{
@@ -66,17 +66,18 @@ html{
     transform: rotateY(0deg) translateZ(-3600px);
     transition: 0.5s ease-in-out all;
 }
-
-
-
-
-
 h2{
     font-family: 'Commissioner', sans-serif;
 }
 /**** SLIDES SECTION**/
 /*Page 1,2*/
 h2.mainTitle{
-    margin-bottom: 250px;
-    
+    margin-bottom: 450px;
+}
+h2.seg{
+    position:relative;
+    left:37%;
+}
+.segmentation{
+    margin-top:100px;
 }
