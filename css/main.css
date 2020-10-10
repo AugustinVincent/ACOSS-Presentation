@@ -20,7 +20,7 @@ html{
     left: -50vw;
     width: 100vw;
     height: 100vh;
-    background: red;
+    background: #21252B;
     color: #ffffff;
     align-items: center;
     justify-content: center;
@@ -66,6 +66,20 @@ html{
     transform: rotateY(0deg) translateZ(-3600px);
     transition: 0.5s ease-in-out all;
 }
+
+.background
+{
+    position: absolute;
+    transform: translateZ(-6000px) translateX(-5000px) translateY(-2000px);
+    width: 10000px;
+    height: 10000px;
+    background: rgb(33,37,43);
+    background: radial-gradient(circle, rgba(33,37,43,1) 0%, rgba(15,17,20,1) 100%);
+    z-index: -5;
+}
+
+
+
 h2{
     font-family: 'Commissioner', sans-serif;
 }
