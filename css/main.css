@@ -5,6 +5,10 @@
     perspective: 2200px;
 }
 
+html{
+    overflow: hidden;
+}
+
 .container *{
     transform-style: preserve-3d;
 }
@@ -25,33 +29,33 @@
 
 
 .page-1{
-    transform: rotateY(0deg) translateZ(800px) translateY(50px);
+    transform: rotateY(0deg) translateZ(800px) ;
 }
 
 .page-2{
-    transform: rotateY(-60deg) translateZ(800px)translateY(-30px);
+    transform: rotateY(-60deg) translateZ(800px);
 }
 
 .page-3{
-    transform: rotateY(-120deg) translateZ(800px)translateY(20px);
+    transform: rotateY(-120deg) translateZ(800px);
 }
 
 .page-4{
-    transform: rotateY(-180deg) translateZ(800px)translateY(-40px);
+    transform: rotateY(-180deg) translateZ(800px);
 }
 
 .page-5{
-    transform: rotateY(-240deg) translateZ(800px)translateY(50px);
+    transform: rotateY(-240deg) translateZ(800px);
 }
 
 .page-6{
-    transform: rotateY(-300deg) translateZ(800px)translateY(-10px);
+    transform: rotateY(-300deg) translateZ(800px);
 }
 
 
 .pivot{
     transform-origin: 0 0 -800px;
-    transform: rotateX(-0deg)rotateY(0deg) translateZ(-800px);
+    transform: rotateY(0deg) translateZ(-800px);
     transition: 0.5s ease-in-out all;
 }
 

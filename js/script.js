@@ -3,33 +3,31 @@ const containerPivot = container.querySelector('.pivot')
 const pages = Array.from(document.querySelectorAll('.page'))
 let pageNumber = 1
 let rotationY = 0
-// window.addEventListener('mousemove', (event) =>
-// {
-//     const rotateY = (event.clientX -innerWidth*0.5)* 0.2
-//     containerPivot.style.transform = `rotateY(${rotateY}deg)`
-//     console.log(event.x)
-// })
 
+const pagesRotationY = [
+     0  , 
+     -60  ,
+    -120  ,
+    -180  ,
+    -240  ,
+    -300  ,
+]
 
 window.addEventListener('keydown', (event) =>
 {
     console.log(event)
+    console.log(pageNumber)
     if(event.key == "ArrowLeft")
     {
         console.log('left')
         if(pageNumber == pages.length)
-        {
-            pageNumber = 1
-            rotationY = 300
-            containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
-            pages[pageNumber - 1].style
-        }
+            pageNumber =  1
         else
-        {
-            pageNumber = pageNumber + 1
-            rotationY += 60
-            containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
-        }
+            pageNumber += 1
+
+        rotationY += 60
+        console.log(pagesRotationY[pageNumber - 1])
+        containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
     }
 
 
@@ -37,16 +35,11 @@ window.addEventListener('keydown', (event) =>
     {
         console.log('right')
         if(pageNumber == 1)
-        {
-            pageNumber = pages.length
-            rotationY = 0
-            containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
-        }
+            pageNumber =  pages.length
         else
-        {
-            pageNumber = pageNumber + 1
-            rotationY -= 60
-            containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
-        }
+            pageNumber -= 1
+
+        rotationY -= 60
+        containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
     }
 })
