@@ -22,6 +22,7 @@ window.addEventListener('keydown', (event) =>
             pageNumber = 1
             rotationY = 300
             containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
+            pages[pageNumber - 1].style
         }
         else
         {
