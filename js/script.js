@@ -21,8 +21,29 @@ window.addEventListener('keydown', (event) =>
 {
     
     if(event.key == "ArrowLeft")
-    {
-        if(pageNumber == 1)
+        leftChange()
+
+
+    if(event.key == "ArrowRight")
+        rightChange()
+
+})
+
+window.addEventListener('click', (event) =>
+{
+    if(event.x > window.innerWidth/2)
+        rightChange()
+
+        
+    if(event.x < window.innerWidth/2)
+        leftChange()
+})
+
+
+
+const leftChange = () =>
+{
+    if(pageNumber == 1)
         {
             pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(2400px)`
             pageNumber =  pages.length
@@ -42,12 +63,13 @@ window.addEventListener('keydown', (event) =>
             
             pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(3600px)`
         }, 1000);
-    }
+}
 
 
-    if(event.key == "ArrowRight")
-    {
-        if(pageNumber == pages.length)
+
+const rightChange = () => 
+{
+    if(pageNumber == pages.length)
         {
             pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(2400px)`
             pageNumber =  1
@@ -68,7 +90,4 @@ window.addEventListener('keydown', (event) =>
             
             pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(3600px)`
         }, 1000);
-    }
-    console.log(pageNumber)
-
-})
+}
