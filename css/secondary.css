@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    
+}
+.mainContainer{
+    width:960px;
+    margin:0 auto;
+    text-align: center;
+}
+.welcome{
+    padding-top:150px;
+    font-family: 'commissioner',sans-serif;
+    letter-spacing: 2px;
+}
+.instructionContainer{
+    display:flex;
+    margin-top:100px;
+}
+.rightContainer, .leftContainer{
+    width:450px;
+    margin:0 auto;
+    text-align: center;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
