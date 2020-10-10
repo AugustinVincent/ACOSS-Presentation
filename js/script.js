@@ -24,18 +24,24 @@ window.addEventListener('keydown', (event) =>
     {
         if(pageNumber == 1)
         {
-            // pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(800px)`
+            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(1100px)`
             pageNumber =  pages.length
         }
         else
         {
-            // pages[pageNumber].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(800px)`
+            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(1100px)`
             pageNumber -= 1
         }
 
         rotationY += 45
-        containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
-        pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(1600px)`
+        setTimeout(() => {
+            
+            containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
+        }, 500);
+        setTimeout(() => {
+            
+            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(1600px)`
+        }, 1000);
     }
 
 
@@ -43,18 +49,25 @@ window.addEventListener('keydown', (event) =>
     {
         if(pageNumber == pages.length)
         {
-            // pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(800px)`
+            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(1100px)`
             pageNumber =  1
         }
         else
         {
-            // pages[pageNumber-2].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(800px)`
+            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(1100px)`
             pageNumber += 1
         }
 
         rotationY -= 45
-        containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
-        pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(1600px)`
+        setTimeout(() => {
+            
+            containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-800px)`
+        }, 500);
+
+        setTimeout(() => {
+            
+            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(1600px)`
+        }, 1000);
     }
     console.log(pageNumber)
 
