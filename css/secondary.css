@@ -1,6 +1,18 @@
 body{
     margin:0;
-    
+}
+.pageContent{
+    display: none;
+}
+.loader{
+    display:block;
+    font-family: 'commissioner', sans-serif;
+    width:960px;
+    margin:0 auto;
+    text-align: center;
+}
+.loaderText{
+    margin-top:350px;
 }
 .mainContainer{
     width:960px;
@@ -23,4 +35,17 @@ body{
 }
 p{
     font-family: 'Open Sans', sans-serif;
+}
+.presLink{
+    width: 960px;
+    margin:0 auto;
+    text-align: center;
+}
+a.slidesLink{
+    font-family:'Open Sans', sans-serif;
+    text-decoration: none;
+    /* color:#FF0756; */
+}
+a:visited{
+    color: #000000;
 }
