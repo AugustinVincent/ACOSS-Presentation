@@ -1,0 +1,64 @@
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 2200px;
+}
+
+.container *{
+    transform-style: preserve-3d;
+}
+
+.container .page{
+    display: flex;
+    position: absolute;
+    top: -300px;
+    left: -450px;
+    width: 900px;
+    height: 600px;
+    background: red;
+    color: #ffffff;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page-1{
+    transform: rotateY(0deg) translateZ(800px) translateY(50px);
+}
+
+.page-2{
+    transform: rotateY(-60deg) translateZ(800px)translateY(-30px);
+}
+
+.page-3{
+    transform: rotateY(-120deg) translateZ(800px)translateY(20px);
+}
+
+.page-4{
+    transform: rotateY(-180deg) translateZ(800px)translateY(-40px);
+}
+
+.page-5{
+    transform: rotateY(-240deg) translateZ(800px)translateY(50px);
+}
+
+.page-6{
+    transform: rotateY(-300deg) translateZ(800px)translateY(-10px);
+}
+
+
+.pivot{
+    transform-origin: 0 0 -800px;
+    transform: rotateX(-0deg)rotateY(0deg) translateZ(-800px);
+    transition: 0.5s ease-in-out all;
+}
+
+/* .background{
+    width: 1000vw;
+    height: 1000vh;
+    background: grey;
+    transform: translateZ(-5000px);
+} */
+
