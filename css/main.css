@@ -104,8 +104,8 @@ html{
 }
 
 .circle-container{
-    width: 150px;
-    height: 150px;
+    width: 8vw;
+    height: 8vw;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -116,7 +116,7 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 0 60px;
+    margin: 0 4vw;
 }
 
 .team img{
