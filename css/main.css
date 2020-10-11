@@ -17,6 +17,8 @@ html{
 .container .page{
     display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     top: -50vh;
     left: -50vw;
     width: 100vw;
@@ -135,6 +137,17 @@ h2.seg{
     align-items: flex-start;
 }
 
+.gregoire{
+    align-items: flex-start;
+}
+
+.gregoire img{
+    width: 350px;
+}
 .augustin img{
     width: 150px;
+}
+
+.theo img{
+    width: 250px;
 }
