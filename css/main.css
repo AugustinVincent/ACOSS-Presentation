@@ -17,7 +17,8 @@ html{
 .container .page{
     display: flex;
     position: absolute;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     top: -50vh;
     left: -50vw;
@@ -85,13 +86,7 @@ html{
 /**** SLIDES SECTION**/
 /*Page 1,2*/
 
-h2.seg{
-    position:relative;
-    left:37%;
-}
-.segmentation{
-    margin-top:100px;
-}
+
 
 .page-1{
     display: flex;
@@ -136,6 +131,8 @@ h2.seg{
 .apo{
     align-items: flex-start;
 }
+
+
 
 .gregoire{
     align-items: flex-start;
