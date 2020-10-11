@@ -6,6 +6,10 @@ const pages = Array.from(document.querySelectorAll('.page'))
 let pageNumber = 1
 let rotationY = 0
 
+setTimeout(() => {
+            
+    pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(3600px)`
+}, 500);
 const pagesRotationY = [
     0 , 
     45  , 
