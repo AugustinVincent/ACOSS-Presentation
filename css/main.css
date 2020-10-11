@@ -33,6 +33,7 @@ html{
     display: block;
     width: 100%;
     text-align: center;
+    font-size: 30px;
 }
 
 .page-1{
@@ -70,7 +71,7 @@ html{
 
 .pivot{
     transform-origin: 0 0 -3600px;
-    transform: rotateY(135deg) translateZ(-3600px);
+    transform: rotateY(45deg) translateZ(-3600px);
     transition: 0.5s ease-in-out all;
 }
 
@@ -183,4 +184,31 @@ html{
 
 .solution-icon{
     height: 200px;
+}
+
+.rigor{
+    width: 400px;
+}
+
+.thanks-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.x-icone{
+    font-size: 120px;
+    font-weight: 700;
+    color: #ff0756;
+    text-align: center;
+}
+
+.thanks-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.thanks-icon{
+    width: 500px;
 }
