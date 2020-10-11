@@ -1,8 +1,10 @@
 body{
     margin:0;
+    background-color:#21252B;
 }
 .pageContent{
     display: none;
+    color: #c4c4c4;
 }
 .loader{
     display:block;
@@ -10,6 +12,7 @@ body{
     width:960px;
     margin:0 auto;
     text-align: center;
+    color:#FF5607;
 }
 .loaderText{
     margin-top:350px;
@@ -44,8 +47,9 @@ p{
 a.slidesLink{
     font-family:'Open Sans', sans-serif;
     text-decoration: none;
+    color:#FF0756;
     /* color:#FF0756; */
 }
 a:visited{
-    color: #000000;
+    color: #FF0756;;
 }
