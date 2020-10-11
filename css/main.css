@@ -71,7 +71,7 @@ html{
 
 .pivot{
     transform-origin: 0 0 -3600px;
-    transform: rotateY(45deg) translateZ(-3600px);
+    transform: rotateY(0deg) translateZ(-3600px);
     transition: 0.5s ease-in-out all;
 }
 
@@ -211,4 +211,35 @@ html{
 
 .thanks-icon{
     width: 500px;
+}
+
+.empathy-container{
+    display: flex;   
+    width: 80%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.empathy-container span{
+    font-size: 40px;
+    font-weight: 700;
+    color: #ff0756;
+}
+
+.hear{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.feel{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.see{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
 }
