@@ -7,6 +7,7 @@
 
 html{
     overflow: hidden;
+    font-family: 'Commissioner', sans-serif;
 }
 
 .container *{
@@ -20,16 +21,14 @@ html{
     left: -50vw;
     width: 100vw;
     height: 100vh;
+    color:  #ffffff;
     background: #21252B;
-    color: #ffffff;
-    align-items: center;
-    justify-content: center;
     transition: 0.5s ease-in-out all;
 }
 
 
 .page-1{
-    transform: rotateY(0deg) translateZ(3600px) ;
+    transform: rotateY(0deg) translateZ(2400px) ;
 }
 
 .page-2{
@@ -80,18 +79,62 @@ html{
 
 
 
-h2{
-    font-family: 'Commissioner', sans-serif;
-}
+
 /**** SLIDES SECTION**/
 /*Page 1,2*/
-h2.mainTitle{
-    margin-bottom: 450px;
-}
+
 h2.seg{
     position:relative;
     left:37%;
 }
 .segmentation{
     margin-top:100px;
+}
+
+.page-1{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.presentation-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+    margin: 10vh;
+}
+
+.circle-container{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 60px;
+}
+
+.team img{
+    width: 200px;
+}
+
+.team h4{
+    font-size: 20px;
+    )
+}
+
+.apo{
+    align-items: flex-start;
+}
+
+.augustin img{
+    width: 150px;
 }
