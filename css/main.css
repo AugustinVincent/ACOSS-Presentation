@@ -71,7 +71,7 @@ html{
 
 .pivot{
     transform-origin: 0 0 -3600px;
-    transform: rotateY(-270deg) translateZ(-3600px);
+    transform: rotateY(0deg) translateZ(-3600px);
     transition: 0.5s ease-in-out all;
 }
 
