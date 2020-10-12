@@ -160,10 +160,15 @@ html{
 }
 
 .segmentation{
-    width: 1200px;
+    width: 200px;
 }
 
+.avatarContainer{
+    display:flex;
+    margin-bottom:100px;
+    justify-content: space-around;
 
+}
 .userflow-container{
     display: flex;
     align-items: flex-start;
