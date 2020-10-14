@@ -12,13 +12,15 @@ setTimeout(() => {
 }, 500);
 const pagesRotationY = [
     0 , 
-    45  , 
-    90  ,
-    135  ,
+    36  , 
+    72  ,
+    108  ,
+    144  ,
     180  ,
-    225  ,
-    270  ,
-    315
+    216  ,
+    252,
+    288,
+    324
 ]
 
 window.addEventListener('keydown', (event) =>
@@ -49,16 +51,16 @@ const leftChange = () =>
 {
     if(pageNumber == 1)
         {
-            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(2400px)`
+            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(3200px)`
             pageNumber =  pages.length
         }
         else
         {
-            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(2400px)`
+            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(3200px)`
             pageNumber -= 1
         }
 
-        rotationY += 45
+        rotationY += 36
         setTimeout(() => {
             
             containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-3600px)`
@@ -75,16 +77,16 @@ const rightChange = () =>
 {
     if(pageNumber == pages.length)
         {
-            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(2400px)`
+            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(3200px)`
             pageNumber =  1
         }
         else
         {
-            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(2400px)`
+            pages[pageNumber-1].style.transform = `rotateY(${pagesRotationY[pageNumber - 1]}deg) translateZ(3200px)`
             pageNumber += 1
         }
 
-        rotationY -= 45
+        rotationY -= 36
         setTimeout(() => {
             
             containerPivot.style.transform = `rotateY(${rotationY}deg) translateZ(-3600px)`

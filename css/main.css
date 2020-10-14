@@ -37,35 +37,43 @@ html{
 }
 
 .page-1{
-    transform: rotateY(0deg) translateZ(2400px) ;
+    transform: rotateY(0deg) translateZ(3200px) ;
 }
 
 .page-2{
-    transform: rotateY(45deg) translateZ(2400px);
+    transform: rotateY(36deg) translateZ(3200px);
 }
 
 .page-3{
-    transform: rotateY(90deg) translateZ(2400px);
+    transform: rotateY(72deg) translateZ(3200px);
 }
 
 .page-4{
-    transform: rotateY(135deg) translateZ(2400px);
+    transform: rotateY(108deg) translateZ(3200px);
 }
 
 .page-5{
-    transform: rotateY(180deg) translateZ(2400px);
+    transform: rotateY(144deg) translateZ(3200px);
 }
 
 .page-6{
-    transform: rotateY(225deg) translateZ(2400px);
+    transform: rotateY(180deg) translateZ(3200px);
 }
 
 .page-7{
-    transform: rotateY(270deg) translateZ(2400px);
+    transform: rotateY(216deg) translateZ(3200px);
 }
 
 .page-8{
-    transform: rotateY(315deg) translateZ(2400px);
+    transform: rotateY(252deg) translateZ(3200px);
+}
+
+.page-9{
+    transform: rotateY(288deg) translateZ(3200px);
+}
+
+.page-10{
+    transform: rotateY(324deg) translateZ(3200px);
 }
 
 
