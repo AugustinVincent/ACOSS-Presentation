@@ -37,49 +37,53 @@ html{
 }
 
 .page-1{
-    transform: rotateY(0deg) translateZ(3200px) ;
+    transform: rotateY(calc(360/11 * 0deg)) translateZ(3400px) ;
 }
 
 .page-2{
-    transform: rotateY(36deg) translateZ(3200px);
+    transform: rotateY(calc(360/11 * 1deg)) translateZ(3400px);
 }
 
 .page-3{
-    transform: rotateY(72deg) translateZ(3200px);
+    transform: rotateY(calc(360/11 * 2deg)) translateZ(3400px);
 }
 
 .page-4{
-    transform: rotateY(108deg) translateZ(3200px);
+    transform: rotateY(calc(360/11 * 3deg)) translateZ(3400px);
 }
 
 .page-5{
-    transform: rotateY(144deg) translateZ(3200px);
+    transform: rotateY(calc(360/11 * 4deg)) translateZ(3400px);
 }
 
 .page-6{
-    transform: rotateY(180deg) translateZ(3200px);
+    transform: rotateY(calc(360/11 * 5deg)) translateZ(3400px);
 }
 
 .page-7{
-    transform: rotateY(216deg) translateZ(3200px);
+    transform: rotateY(calc(360/11 * 6deg)) translateZ(3400px);
 }
 
 .page-8{
-    transform: rotateY(252deg) translateZ(3200px);
+    transform: rotateY(calc(360/11 * 7deg)) translateZ(3400px);
 }
 
 .page-9{
-    transform: rotateY(288deg) translateZ(3200px);
+    transform: rotateY(calc(360/11 * 8deg)) translateZ(3400px);
 }
 
 .page-10{
-    transform: rotateY(324deg) translateZ(3200px);
+    transform: rotateY(calc(360/11 * 9deg)) translateZ(3400px);
+}
+
+.page-11{
+    transform: rotateY(calc(360/11 * 10deg)) translateZ(3400px);
 }
 
 
 .pivot{
-    transform-origin: 0 0 -3600px;
-    transform: rotateY(0deg) translateZ(-3600px);
+    transform-origin: 0 0 -4000px;
+    transform: rotateY(0deg) translateZ(-4000px);
     transition: 0.5s ease-in-out all;
 }
 
@@ -296,4 +300,43 @@ html{
 
 .prototype-container img{
     height: 75vh;
+}
+
+.prob-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+
+
+.prob-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.prob-data h5{
+    font-size: 60px;
+    font-weight: 900;
+    color : #ff0756;
+    margin: 20px auto;
+}
+
+.prob-data span{
+    width: 150px;
+}
+
+.zoom-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.zoom-container img{
+    width: 30%;
 }
